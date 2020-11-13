@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Matteo  Sammartino | blank</title>
+<title>Matteo  Sammartino | student projects</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/student-projects/">
 
 <!-- Theming-->
 
@@ -145,56 +145,32 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">student projects</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    <p>A few ideas for BSc/MSc and MEng projects. Please contact me if you are interested and want to have a chat.</p>
+
+<h4 id="representing-the-correct-ways-of-using-a-software-library"><strong>Representing the correct ways of using a software library</strong></h4>
+
+<p>Functions in a software library sometimes need to be used in a specific order. For instance, in Python file.read() must be called after file = open(). However, in many cases patterns are not well-documented, and so developers often make mistakes. The goal of this project is to devise techniques to build an automaton representing those patterns, which can be used to check if a given piece of code follows the patterns. This can be done in several ways, for instance by “mining” online information. I am particularly interested in <em>learning</em> the pattern automaton in a black-box fashion, via interactions with the library. In fact, it is often the case that the source code of the library is not available, therefore one can only look at what happens when the library functions are called with certain parameters.</p>
+
+<h4 id="algorithms-for-symbolic-register-automata"><strong>Algorithms for (symbolic) register automata</strong></h4>
+
+<p>Finite-state automata can become very big when the alphabet is large, and cannot handle an infinite alphabet. To tackle these issues, richer types of automata have been introduced.</p>
+
+<p><a href="http://pages.cs.wisc.edu/~loris/papers/cav17-tutorial">Symbolic automata</a> have <em>predicates</em> on transitions, representing the fact that a (possibly infinite) class of symbols can be read by a transition. For instance, predicates can be regular expressions, e.g., <code class="language-plaintext highlighter-rouge">[0-9]</code>, meaning that a transition can read any character between 0 and 9.</p>
+
+<p><a href="https://doi.org/10.1016/0304-3975(94)90242-9">Register automata</a> have <em>registers</em>, where they can store symbols they read, and compare them with those read later.</p>
+
+<p>Recently, <a href="https://arxiv.org/abs/1811.06968">symbolic register automata</a> have been introduced, combining the features of both automata.</p>
+
+<p>Several questions remain open. Minimization algorithms for symbolic automata are available. How can we minimise a register automaton? And symbolic register automata? Can we do it via <em>partition refinement</em>? Can we exploit the structure of registers to give an efficient algorithm for checking language equivalence of two (deterministic) symbolic register automata?</p>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
 

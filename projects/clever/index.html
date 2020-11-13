@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Matteo  Sammartino | blank</title>
+<title>Matteo  Sammartino | Verification of Hardware Concurency via Model Learning (CLeVer)</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/clever/">
 
 <!-- Theming-->
 
@@ -145,56 +145,32 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Verification of Hardware Concurency via Model Learning (CLeVer)</h1>
+    <p class="post-description"></p>
+  </header>
 
+  <article>
+    <p>Our society is increasingly reliant on digital devices that are capable of performing several tasks at the same time: tablets, smartphones, our personal computers, they all contain processors capable of executing multiple instructions concurrently. Bugs in these processors, such as the recently discovered <a href="https://meltdownattack.com/">Meltdown and Spectre</a>, can seriously compromise the security and safety of their users. As the complexity of these systems increases, there is a pressing need to automate the assessment of their correctness, especially with respect to concurrency-related aspects.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
+<p>Formal verification provides highly effective techniques to automatically check important properties of systems. 
+It relies on a machine-readable abstraction of the actual system—a <strong>model</strong>.
+A key strength of formal verification is that, when the model is accurate enough, it is able to find bugs that would be hard to find and reproduce using traditional testing alone.
+However, these models are usually built by humans, and as such can be error-prone and inaccurate.
+Moreover, sophisticated concurrent behaviours such as weak-memory concurrency make modelling even more challenging.</p>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<blockquote>
+  <p>The overall goal of this project is to develop a verification framework for hardware systems that uses artificial intelligence to automatically build and verify better models. Ultimately, this will lead to lower production costs and more reliable hardware.</p>
+</blockquote>
 
+<p>This is particularly important for companies that design hardware units destined to large-scale production, such as ARM: a bug in the design may lead to millions of faulty units being manufactured.</p>
 
+<p>The novel idea behind this project is to rely on the <strong>model learning</strong> paradigm, originally proposed in AI, to automatically build a model of a running system in a <strong>black-box fashion</strong>—from a series of observations of the behaviour of the system. 
+This approach can be very effective in taming complexity and achieving scalability: by treating the whole system, or some of its components, as black-boxes, one can fine-tune the level of detail of the model and focus the analysis on specific features.</p>
+
+<p>In recent years model learning has started to be successfully applied in a variety of academic and industrial contexts. However, the models developed using this approach are all inherently <strong>sequential</strong>. The verification of <strong>concurrent</strong> behaviour in hardware systems is an unexplored, challenging, and potentially rewarding application that this project proposes to explore.</p>
+
+  </article>
 
 </div>
 

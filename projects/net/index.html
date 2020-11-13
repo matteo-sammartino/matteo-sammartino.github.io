@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Matteo  Sammartino | blank</title>
+<title>Matteo  Sammartino | Automated Black-box Verification of Networking Systems</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/net/">
 
 <!-- Theming-->
 
@@ -145,56 +145,28 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Automated Black-box Verification of Networking Systems</h1>
+    <p class="post-description"></p>
+  </header>
 
+  <article>
+    <p>Our society is increasingly reliant on <strong>complex networking systems</strong>, consisting of several components that operate in a distributed/concurrent fashion, exchange data that may be highly sensitive, and are implemented with a mix of open and closed-source code. Examples are Software Defined Networks, cloud computing systems, Internet of Things and others.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
+<p>As the complexity of these systems increases, there is a pressing need of methods and tools to automatically verify  security and privacy properties.
+<strong>High quality models</strong> – able to express all the behaviours of interest – are of paramount importance to this aim. However, it is often the case that the task of building a model is performed by humans and in a short span of time – if it is performed at all – and as such can be error-prone and inaccurate.</p>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<p>The goal of this project is to develop techniques and tools to automate the modelling and verification of networking software systems. 
+The novel idea is to rely on the <strong>model learning</strong> paradigm, originally proposed in artificial intelligence, to automatically build a state-based model of a running system in a <strong>black-box fashion</strong> – purely via interactions with the running system. 
+This approach can be very effective in taming complexity and achieving scalability: by treating the whole system, or some of its components, as black-boxes, one can fine-tune the level of detail of the model and focus the analysis on specific features.</p>
 
+<p>In particular, the project will focus on learning models that capture two prominent features of modern networking systems, which play a key role in security and privacy: <strong>concurrency</strong> and <strong>large data domains</strong>.</p>
 
+<p>The proposed research is highly innovative: there are no existing techniques to automatically learn state-based models of networking behaviour, let alone ones dealing with concurrency and large data domains. It is also particularly timely, as networks now allow for an unprecedented control over their behaviour via software, which brings new challenges and new opportunities for analysis.</p>
+
+<p>The research will be conducted in the context of the <a href="http://www.calf-project.org/">CALF</a> research programme, aiming at developing a general foundational framework for the design and implementation of model learning algorithms. This will give a strong theoretical foundation to the endeavour, and a wide applicability to its results.</p>
+
+  </article>
 
 </div>
 
