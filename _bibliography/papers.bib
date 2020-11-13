@@ -330,6 +330,7 @@ and characterize RDT specifications as functors between such categories that pre
 title={Residual Nominal Automata},
 author =	{Joshua Moerman and Matteo Sammartino},
 booktitle = {31st International Conference on Concurrency Theory ({CONCUR})},
+year = {2020},
 abstract = {We are motivated by the following question: which nominal languages admit an active learning algorithm? This question was left open in previous work, and is particularly challenging for languages recognised by nondeterministic automata. To answer it, we develop the theory of residual nominal automata, a subclass of nondeterministic nominal automata. We prove that this class has canonical representatives, which can always be constructed via a finite number of observations. This property enables active learning algorithms, and makes up for the fact that residuality - a semantic property - is undecidable for nominal automata. Our construction for canonical residual automata is based on a machine-independent characterisation of residual languages, for which we develop new results in nominal lattice theory. Studying residuality in the context of nominal languages is a step towards a better understanding of learnability of automata with some sort of nondeterminism.},
 pdf = {CONCUR20.pdf}
 }
@@ -342,12 +343,14 @@ pdf = {CONCUR20.pdf}
   booktitle = {Coalgebraic Methods in Computer Science - 15th International
                Workshop ({CMCS})},
   url       = {https://doi.org/10.1007/978-3-030-57201-3\_5},
+  year = {2020},
   abstract = {Automata learning has been successfully applied in the verification of hardware and software. The size of the automaton model learned is a bottleneck for scalability, and hence optimizations that enable learning of compact representations are important. This paper exploits monads, both as a mathematical structure and a programming construct, to design and prove correct a wide class of such optimizations. Monads enable the development of a new learning algorithm and correctness proofs, building upon a general framework for automata learning based on category theory. The new algorithm is parametric on a monad, which provides a rich algebraic structure to capture non-determinism and other side-effects. We show that this allows us to uniformly capture existing algorithms, develop new ones, and add optimizations.},
   pdf = {CMCS20.pdf}
 }
 
 @inproceedings{ICTAC20,
   title = {Implementation correctness for Replicated Data Types, categorically},
+  year = {2020},
   abstract = {Replicated Data Types (rdts) have been introduced as an abstraction for dealing with weakly consistent data stores, which may (temporarily) expose multiple, inconsistent views of their state. In the literature, rdts are usually presented in set-theoretical terms: Only re- cently different specification flavours have been proposed, among them a denotational formalism that inter alia captures specification refinement. So far, however, no abstract model has been proposed for the implemen- tations and their correctness with respect to specifications. This paper fills the gap: We first give categorical constructions for distilling an op- erational model from a specification, as well as its implementations, and then we define a notion of implementation correctness via simulation.},
   author = {Fabio Gadducci and Hernan Melgratti and Christian Roldan and Matteo Sammartino},
   booktitle = {17th International Colloquium on Theoretical Aspects of Computing ({ICTAC})},
@@ -365,6 +368,7 @@ pdf = {CONCUR20.pdf}
   title     = {Actor-Based Model Checking for {SDN} Networks},
   journal   = {Journal of Logical and Algebraic Methods in Programming},
   year      = {2020},
+  abstract = {Software-Defined Networking (SDN) is a networking paradigm that has become increasingly popular in the last decade. The unprecedented control over the global behavior of the network it provides opens a range of new opportunities for formal methods and much work has appeared in the last few years on providing bridges between SDN and verification. This article advances this research line and provides a link between SDN and traditional work on formal methods for verification of concurrent and distributed software---actor-based modelling. We show how SDN programs can be seamlessly modelled using <strong>actors</strong>, and thus existing advanced model checking techniques developed for actors can be directly applied to verify a range of properties of SDN networks, including consistency of flow tables, violation of safety policies, and forwarding loops. Our model checker for SDN networks is available through an online web interface, that also provides the SDN actor-models for a number of well-known SDN benchmarks.},
   pdf = {JLAMP20.pdf},
   notes = {Accepted}
 }
