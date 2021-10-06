@@ -29,6 +29,14 @@ layout: default
       {{ content }}
     </div>
 
+    <hr>
+    
+    {% if page.shortbio %}
+      {% include shortbio.html %}
+    {% endif %}
+    
+    <hr>    
+
     {% if page.news %}
       {% include news.html %}
     {% endif %}
