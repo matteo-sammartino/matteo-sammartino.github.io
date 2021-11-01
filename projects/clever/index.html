@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://matteosammartino.com//" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   Matteo Sammartino
 
 
-  | Page not found
+  | Verification of Hardware Concurency via Model Learning (CLeVer)
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/404.html">
+<link rel="canonical" href="/projects/clever/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -179,12 +179,29 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">Verification of Hardware Concurency via Model Learning (CLeVer)</h1>
+    <p class="post-description"></p>
   </header>
 
   <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://matteosammartino.com//">here</a>.</p>
+    <p>Our society is increasingly reliant on digital devices that are capable of performing several tasks at the same time: tablets, smartphones, our personal computers, they all contain processors capable of executing multiple instructions concurrently. Bugs in these processors, such as the recently discovered <a href="https://meltdownattack.com/" target="_blank" rel="noopener noreferrer">Meltdown and Spectre</a>, can seriously compromise the security and safety of their users. As the complexity of these systems increases, there is a pressing need to automate the assessment of their correctness, especially with respect to concurrency-related aspects.</p>
+
+<p>Formal verification provides highly effective techniques to automatically check important properties of systems. 
+It relies on a machine-readable abstraction of the actual system—a <strong>model</strong>.
+A key strength of formal verification is that, when the model is accurate enough, it is able to find bugs that would be hard to find and reproduce using traditional testing alone.
+However, these models are usually built by humans, and as such can be error-prone and inaccurate.
+Moreover, sophisticated concurrent behaviours such as weak-memory concurrency make modelling even more challenging.</p>
+
+<blockquote>
+  <p>The overall goal of this project is to develop a verification framework for hardware systems that uses artificial intelligence to automatically build and verify better models. Ultimately, this will lead to lower production costs and more reliable hardware.</p>
+</blockquote>
+
+<p>This is particularly important for companies that design hardware units destined to large-scale production, such as ARM: a bug in the design may lead to millions of faulty units being manufactured.</p>
+
+<p>The novel idea behind this project is to rely on the <strong>model learning</strong> paradigm, originally proposed in AI, to automatically build a model of a running system in a <strong>black-box fashion</strong>—from a series of observations of the behaviour of the system. 
+This approach can be very effective in taming complexity and achieving scalability: by treating the whole system, or some of its components, as black-boxes, one can fine-tune the level of detail of the model and focus the analysis on specific features.</p>
+
+<p>In recent years model learning has started to be successfully applied in a variety of academic and industrial contexts. However, the models developed using this approach are all inherently <strong>sequential</strong>. The verification of <strong>concurrent</strong> behaviour in hardware systems is an unexplored, challenging, and potentially rewarding application that this project proposes to explore.</p>
 
   </article>
 

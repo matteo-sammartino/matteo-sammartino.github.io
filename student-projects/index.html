@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://matteosammartino.com//" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   Matteo Sammartino
 
 
-  | Page not found
+  | student projects
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/404.html">
+<link rel="canonical" href="/student-projects/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -124,6 +124,8 @@
           
           
           
+          
+          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 projects
@@ -179,12 +181,29 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">student projects</h1>
+    <p class="post-description"></p>
   </header>
 
   <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://matteosammartino.com//">here</a>.</p>
+    <p>A few ideas for BSc/MSc and MEng projects. Please contact me if you are interested and want to have a chat.</p>
+
+<h4 id="representing-the-correct-ways-of-using-a-software-library"><strong>Representing the correct ways of using a software library</strong></h4>
+
+<p>Functions in a software library sometimes need to be used in a specific order. For instance, in Python file.read() must be called after file = open(). However, in many cases patterns are not well-documented, and so developers often make mistakes. The goal of this project is to devise techniques to build an automaton representing those patterns, which can be used to check if a given piece of code follows the patterns. This can be done in several ways, for instance by “mining” online information. I am particularly interested in <em>learning</em> the pattern automaton in a black-box fashion, via interactions with the library. In fact, it is often the case that the source code of the library is not available, therefore one can only look at what happens when the library functions are called with certain parameters.</p>
+
+<h4 id="algorithms-for-symbolic-register-automata"><strong>Algorithms for (symbolic) register automata</strong></h4>
+
+<p>Finite-state automata can become very big when the alphabet is large, and cannot handle an infinite alphabet. To tackle these issues, richer types of automata have been introduced.</p>
+
+<p><a href="http://pages.cs.wisc.edu/~loris/papers/cav17-tutorial" target="_blank" rel="noopener noreferrer">Symbolic automata</a> have <em>predicates</em> on transitions, representing the fact that a (possibly infinite) class of symbols can be read by a transition. For instance, predicates can be regular expressions, e.g., <code class="language-plaintext highlighter-rouge">[0-9]</code>, meaning that a transition can read any character between 0 and 9.</p>
+
+<p><a href="https://doi.org/10.1016/0304-3975(94)90242-9" target="_blank" rel="noopener noreferrer">Register automata</a> have <em>registers</em>, where they can store symbols they read, and compare them with those read later.</p>
+
+<p>Recently, <a href="https://arxiv.org/abs/1811.06968" target="_blank" rel="noopener noreferrer">symbolic register automata</a> have been introduced, combining the features of both automata.</p>
+
+<p>Several questions remain open. Minimization algorithms for symbolic automata are available. How can we minimise a register automaton? And symbolic register automata? Can we do it via <em>partition refinement</em>? Can we exploit the structure of registers to give an efficient algorithm for checking language equivalence of two (deterministic) symbolic register automata?</p>
+
 
   </article>
 
