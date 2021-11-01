@@ -76,6 +76,10 @@
       {% if entry.year %}
         {{entry.year}}
       {% endif %}
+      {% if entry.notes %}
+        <br>
+        <strong>{{entry.notes}}</strong>
+      {% endif %}
       </div>
     {% endif %}
 
