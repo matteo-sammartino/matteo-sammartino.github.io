@@ -40,6 +40,30 @@ body.sticky-bottom-footer {
 
 // TODO: redefine content layout.
 
+.me-title {
+  font-weight: bold;
+  font-size: larger;
+}
+
+
+.me-info {
+  width: 70%;  
+  padding: 10pt;
+
+
+  .me-contacts {
+    padding-left: 0pt;
+    padding-top: 30pt;
+    list-style: none;
+  }
+}
+
+.important {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow:3px 3px 3px grey;
+}
+
 /******************************************************************************
  * Publications
  ******************************************************************************/
